@@ -1,0 +1,19 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+.img-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+img.card-img-top {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+img.card-img-top:hover {
+  transform: scale(175%);
+  box-shadow: 0 0 500px 200px black;
+  z-index: 999;
+}
